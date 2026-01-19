@@ -3,41 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gnarptech // home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>gnarptech</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            color: white;
+            background-color: #0a0a0a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* --- THE WALLPAPER --- */
+        .bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            z-index: -1;
+            /* Replace the link below with your own wallpaper later */
+            background-image: url('https://images.unsplash.com/photo-1614850523296-d8c1af93d400?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            filter: brightness(0.3);
+        }
+
+        .container {
+            width: 90%;
+            max-width: 450px;
+            padding: 40px 0;
+        }
+
+        /* --- THE HEADER --- */
+        header {
+            background: #adff2f;
+            color: black;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px rgba(173, 255, 47, 0.4);
+        }
+
+        h1 { font-size: 2.5rem; font-weight: 800; text-transform: lowercase; }
+
+        /* --- THE NICE CARDS --- */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 { color: #adff2f; margin-bottom: 10px; font-size: 1.4rem; }
+        p { margin-bottom: 10px; line-height: 1.5; opacity: 0.9; }
+
+        /* --- THE BUTTONS --- */
+        .links { display: flex; flex-direction: column; gap: 10px; }
+        
+        a {
+            background: #ffffff;
+            color: #000;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .discord {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #adff2f;
+        }
+
+        footer { text-align: center; margin-top: auto; padding: 20px; opacity: 0.4; font-size: 0.8rem; }
+    </style>
 </head>
 <body>
 
-    <div class="wallpaper"></div>
+    <div class="bg"></div>
 
     <div class="container">
         <header>
             <h1>gnarptech</h1>
         </header>
 
-        <main>
-            <section class="glass-card">
-                <h2>Welcome</h2>
-                <p>Hi, I love working on tech and I have been learning about it since 2020.</p>
-                <p>This site is a collection of my projects and social links.</p>
-            </section>
+        <div class="card">
+            <h2>Welcome</h2>
+            <p>Hi, I love working on tech and I have been learning about it since 2020.</p>
+            <p>This site is a collection of my projects and social links.</p>
+        </div>
 
-            <section class="glass-card">
-                <h2>Socials</h2>
-                <div class="links-grid">
-                    <a href="https://github.com/gnrpgit" target="_blank" class="btn">GitHub</a>
-                    <a href="https://youtube.com/@gnarptech" target="_blank" class="btn">YouTube</a>
-                    <a href="https://tiktok.com/@gnarpytech" target="_blank" class="btn">TikTok</a>
-                </div>
-                <div class="discord-footer">
-                    <span>Discord: <strong>frhzxx</strong></span>
-                </div>
-            </section>
-        </main>
+        <div class="card">
+            <h2>Socials</h2>
+            <div class="links">
+                <a href="https://github.com/gnrpgit">GitHub</a>
+                <a href="https://youtube.com/@gnarptech">YouTube</a>
+                <a href="https://tiktok.com/@gnarpytech">TikTok</a>
+            </div>
+            <div class="discord">Discord: <strong>frhzxx</strong></div>
+        </div>
 
-        <footer>
-            <p>&copy; 2026</p>
-        </footer>
+        <footer>&copy; 2026</footer>
     </div>
 
 </body>
