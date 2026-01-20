@@ -14,6 +14,26 @@ body {
     align-items: center;
 }
 
+.audio-player {
+  background: linear-gradient(135deg, #1e7f4f, #145c3a);
+  padding: 16px;
+  border-radius: 12px;
+  width: 320px;
+  box-shadow: 0 8px 20px rgba(0, 255, 150, 0.25);
+}
+
+.track-title {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #b6ffd9;
+}
+
+audio {
+  width: 100%;
+  filter: hue-rotate(90deg) saturate(1.4);
+}
+
+
 /* --- THE WALLPAPER --- */
 .bg, .wallpaper {
     position: fixed;
