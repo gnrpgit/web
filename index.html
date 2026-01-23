@@ -3,129 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>gnarptech</title>
-    
+    <title>cyththeproot</title>
+
     <link rel="icon" type="image/png" href="bg.png">
-
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        
-        body {
-            font-family: 'Segoe UI', Roboto, sans-serif;
-            color: white;
-            background-color: #0a0a0a;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        /* --- THE WALLPAPER --- */
-        .bg {
-            position: fixed;
-            top: 0; left: 0; width: 100%; height: 100%;
-            z-index: -1;
-            background-image: url('bg.png');
-            background-size: cover;
-            background-position: center;
-            filter: brightness(0.4);
-        }
-
-        .container {
-            width: 90%;
-            max-width: 450px;
-            padding: 40px 0;
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        /* --- THE HEADER --- */
-        header {
-            background: #adff2f;
-            color: black;
-            padding: 35px;
-            border-radius: 24px;
-            text-align: center;
-            margin-bottom: 20px;
-            box-shadow: 0 0 25px rgba(173, 255, 47, 0.5);
-        }
-
-        h1 { font-size: 2.5rem; font-weight: 900; text-transform: lowercase; }
-
-        /* --- THE GLASS CARDS --- */
-        .card {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(15px);
-            -webkit-backdrop-filter: blur(15px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            padding: 25px;
-            border-radius: 24px;
-        }
-
-        h2 { color: #adff2f; margin-bottom: 12px; font-size: 1.5rem; }
-        p { font-size: 1.1rem; line-height: 1.5; margin-bottom: 10px; opacity: 0.9; }
-
-        /* --- THE GLOWING BUTTONS --- */
-        .links { display: flex; flex-direction: column; gap: 12px; }
-        
-        a {
-            background: #ffffff;
-            color: #000;
-            text-decoration: none;
-            padding: 16px;
-            border-radius: 16px;
-            text-align: center;
-            font-weight: 800;
-            transition: all 0.3s ease;
-            display: block;
-        }
-
-        a:hover {
-            background: #adff2f;
-            box-shadow: 0 0 20px rgba(173, 255, 47, 0.6);
-            transform: translateY(-2px);
-        }
-
-        a:active { 
-            background: #adff2f; 
-            box-shadow: 0 0 25px rgba(173, 255, 47, 0.9);
-            transform: scale(0.95);
-        }
-
-        /* --- STATUS DOT & DISCORD --- */
-        .discord-container { 
-            text-align: center; 
-            margin-top: 15px; 
-            background: rgba(0,0,0,0.3);
-            padding: 12px;
-            border-radius: 12px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .status-dot {
-            height: 10px;
-            width: 10px;
-            background-color: #adff2f;
-            border-radius: 50%;
-            display: inline-block;
-            box-shadow: 0 0 8px #adff2f;
-            animation: pulse 2s infinite;
-        }
-
-        @keyframes pulse {
-            0% { opacity: 1; transform: scale(1); }
-            50% { opacity: 0.5; transform: scale(1.2); }
-            100% { opacity: 1; transform: scale(1); }
-        }
-
-        .discord-text { color: #adff2f; font-weight: bold; }
-
-        footer { text-align: center; margin-top: auto; padding: 20px; opacity: 0.3; font-size: 0.8rem; }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -133,7 +14,7 @@
 
     <div class="container">
         <header>
-            <h1>gnarptech</h1>
+            <h1>cyththeproot</h1>
         </header>
 
         <div class="card">
@@ -144,24 +25,28 @@
 
         <div class="card">
             <h2>Socials</h2>
+
             <div class="links">
                 <a href="https://github.com/gnrpgit" target="_blank">GitHub</a>
                 <a href="https://youtube.com/@gnarptech" target="_blank">YouTube</a>
                 <a href="https://tiktok.com/@gnarpytech" target="_blank">TikTok</a>
             </div>
-            
-            <div class="discord-container">
+
+            <!-- DISCORD PRESENCE -->
+            <div class="discord-presence">
                 <span class="status-dot"></span>
                 <span class="discord-text">Discord: frhzxx</span>
             </div>
+
+            <!-- AUDIO -->
             <div class="audio-player">
                 <p class="track-title">playing: fall guys - fall 'n' roll</p>
                 <audio controls>
                     <source src="music.mp3" type="audio/mpeg">
                 </audio>
             </div>
-
         </div>
+
         <footer>website by @gnrpgit, javascript functionality by @jkbinf</footer>
         <footer>&copy; 2026</footer>
     </div>
@@ -169,4 +54,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
