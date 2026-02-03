@@ -45,48 +45,43 @@ header h1 {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 section {
-    background: #ffffff;
-    color: #000000;
-    padding: 30px;
-    border-radius: 0;
+    background: #1e1e2e;
+    color: #ffffff;
+    padding: 0;
+    border-radius: 8px;
     border: 2px solid #ea0101;
-    box-shadow: none;
-}
-
-.welcome {
-    grid-column: 1 / 2;
-}
-
-.socials {
-    grid-column: 2 / 3;
-}
-
-.extras {
-    grid-column: 3 / 4;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    min-width: 300px;
+    flex: 1 1 300px;
+    max-width: 400px;
 }
 
 h2 {
-    color: #ea0101;
-    margin-bottom: 15px;
-    font-size: 1.8rem;
+    background: #ea0101;
+    color: #ffffff;
+    margin: 0;
+    padding: 10px 15px;
+    font-size: 1.4rem;
     font-weight: bold;
     text-transform: uppercase;
+    border-bottom: 2px solid #ea0101;
 }
 
 p {
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 15px;
+    padding: 15px;
 }
 
 .links {
@@ -94,6 +89,7 @@ p {
     flex-direction: column;
     gap: 15px;
     margin-top: 20px;
+    padding: 0 15px 15px;
 }
 
 a {
