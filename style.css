@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,7 +7,7 @@
 }
 
 body {
-    font-family: 'Courier New', monospace;
+    font-family: 'Lato', sans-serif;
     color: #ffffff;
     background-color: #181e22;
     min-height: 100vh;
